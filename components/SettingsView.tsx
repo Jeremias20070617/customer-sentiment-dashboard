@@ -36,24 +36,55 @@ const themes: { name: Theme; colors: string[] }[] = [
     { name: 'high-contrast', colors: ['#000000', '#FFFF00', '#FFFFFF'] },
 ];
 
+interface DraftSettings {
+    apiKey: string;
+    language: string;
+    theme: Theme;
+}
+
 export const SettingsView: React.FC = () => {
   const { t, language, setLanguage } = useLanguage();
   const { theme, setTheme } = useTheme();
   const { apiKey, setApiKey } = useApiKey();
-  const [keyInput, setKeyInput] = useState('');
+  
+  const [draftSettings, setDraftSettings] = useState<DraftSettings>({
+    apiKey: apiKey || '',
+    language: language,
+    theme: theme,
+  });
   const [isKeyVisible, setIsKeyVisible] = useState(false);
-  const [isSaved, setIsSaved] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isDirty, setIsDirty] = useState(false);
 
   useEffect(() => {
-    if (apiKey) {
-      setKeyInput(apiKey);
-    }
-  }, [apiKey]);
+    setDraftSettings({
+      apiKey: apiKey || '',
+      language: language,
+      theme: theme,
+    });
+  }, [apiKey, language, theme]);
 
-  const handleSaveKey = () => {
-    setApiKey(keyInput);
-    setIsSaved(true);
-    setTimeout(() => setIsSaved(false), 2000);
+  useEffect(() => {
+    const hasChanges =
+      draftSettings.apiKey !== (apiKey || '') ||
+      draftSettings.language !== language ||
+      draftSettings.theme !== theme;
+    setIsDirty(hasChanges);
+  }, [draftSettings, apiKey, language, theme]);
+
+  const handleDraftChange = (field: keyof DraftSettings, value: string | Theme) => {
+    setDraftSettings(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleSaveChanges = () => {
+    setIsSaving(true);
+    setApiKey(draftSettings.apiKey);
+    setLanguage(draftSettings.language);
+    setTheme(draftSettings.theme);
+
+    setTimeout(() => {
+      setIsSaving(false);
+    }, 1500);
   };
 
   return (
@@ -79,8 +110,8 @@ export const SettingsView: React.FC = () => {
                     <input
                         id="api-key-input"
                         type={isKeyVisible ? 'text' : 'password'}
-                        value={keyInput}
-                        onChange={(e) => setKeyInput(e.target.value)}
+                        value={draftSettings.apiKey}
+                        onChange={(e) => handleDraftChange('apiKey', e.target.value)}
                         placeholder={t('settings.apiKey.placeholder')}
                         className="w-full h-10 bg-background border border-input rounded-md px-3 pr-10 text-sm"
                     />
@@ -93,7 +124,7 @@ export const SettingsView: React.FC = () => {
                     </button>
                 </div>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-end">
                  <a 
                     href="https://aistudio.google.com/api-keys" 
                     target="_blank" 
@@ -102,9 +133,6 @@ export const SettingsView: React.FC = () => {
                 >
                     {t('settings.apiKey.getLink')}
                 </a>
-                <Button onClick={handleSaveKey} className="min-w-[100px]">
-                    {isSaved ? t('settings.apiKey.saved') : t('settings.apiKey.saveButton')}
-                </Button>
             </div>
         </CardContent>
       </Card>
@@ -119,9 +147,9 @@ export const SettingsView: React.FC = () => {
             {languages.map(lang => (
               <button
                 key={lang.code}
-                onClick={() => setLanguage(lang.code)}
+                onClick={() => handleDraftChange('language', lang.code)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors
-                  ${language === lang.code
+                  ${draftSettings.language === lang.code
                     ? 'bg-primary text-primary-foreground'
                     : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                   }`}
@@ -144,8 +172,8 @@ export const SettingsView: React.FC = () => {
                 {themes.map((themeItem) => (
                     <div key={themeItem.name}>
                         <button
-                            onClick={() => setTheme(themeItem.name)}
-                            className={`w-full p-2 border-2 rounded-lg ${theme === themeItem.name ? 'border-primary' : 'border-border'}`}
+                            onClick={() => handleDraftChange('theme', themeItem.name)}
+                            className={`w-full p-2 border-2 rounded-lg ${draftSettings.theme === themeItem.name ? 'border-primary' : 'border-border'}`}
                         >
                             <div className="flex justify-center items-center space-x-2 rounded-md p-4" style={{backgroundColor: themeItem.colors[0]}}>
                                 <div className="h-6 w-6 rounded-full" style={{backgroundColor: themeItem.colors[1]}} />
@@ -158,6 +186,12 @@ export const SettingsView: React.FC = () => {
             </div>
         </CardContent>
       </Card>
+      
+      <div className="flex justify-end pt-4">
+        <Button onClick={handleSaveChanges} disabled={!isDirty || isSaving} className="min-w-[150px]">
+            {isSaving ? t('settings.saving') : t('settings.saveChanges')}
+        </Button>
+      </div>
     </div>
   );
 };

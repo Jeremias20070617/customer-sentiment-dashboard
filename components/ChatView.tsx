@@ -47,16 +47,16 @@ export const ChatView: React.FC<ChatViewProps> = ({ project }) => {
     try {
       let response = await chatSessionRef.current.sendMessage({ message: userMessage.content });
   
-      while (response.functionCalls && response.functionCalls.length > 0) {
+      if (response.functionCalls && response.functionCalls.length > 0) {
         const calls = response.functionCalls;
         
-        const functionResponses = await Promise.all(calls.map(async (call) => {
+        const functionResponseParts = await Promise.all(calls.map(async (call) => {
           let functionResult: any;
           if (call.name === 'findReviews') {
             const { sentiment, keywords } = call.args;
             const filtered = project.analysisResult?.detailedBreakdown.filter(r => {
               const sentimentMatch = !sentiment || r.sentiment === sentiment;
-              const keywordList = keywords ? keywords.split(',').map(k => k.trim().toLowerCase()).filter(k => k) : [];
+              const keywordList = keywords ? (keywords as string).split(',').map(k => k.trim().toLowerCase()).filter(k => k) : [];
               const keywordMatch = !keywords || keywordList.length === 0 || keywordList.some(k => r.reviewText.toLowerCase().includes(k));
               return sentimentMatch && keywordMatch;
             }) || [];
@@ -80,13 +80,14 @@ export const ChatView: React.FC<ChatViewProps> = ({ project }) => {
           }
 
           return {
-            id: call.id,
-            name: call.name,
-            response: functionResult,
+            functionResponse: {
+                name: call.name,
+                response: functionResult,
+            },
           };
         }));
         
-        response = await chatSessionRef.current.sendToolResponse({ functionResponses });
+        response = await chatSessionRef.current.sendMessage({ message: functionResponseParts });
       }
       
       const modelMessage: ChatMessage = { role: 'model', content: response.text };

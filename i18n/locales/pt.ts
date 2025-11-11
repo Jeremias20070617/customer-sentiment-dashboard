@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "Painel de Sentimento do Cliente com IA",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "Configurações",
+        saveChanges: "Salvar Alterações",
+        saving: "Salvando...",
         language: {
             title: "Idioma",
             description: "Escolha o idioma de exibição para o aplicativo."
@@ -94,8 +97,6 @@ export default {
             description: "Sua chave de API Gemini é armazenada com segurança no armazenamento local do seu navegador e nunca é enviada para nenhum outro lugar.",
             yourKey: "Sua Chave de API Gemini",
             placeholder: "Digite sua chave de API aqui",
-            saveButton: "Salvar Chave",
-            saved: "Salvo!",
             getLink: "Obtenha sua Chave de API Gemini"
         }
     },

@@ -76,6 +76,8 @@ export default {
     },
     settings: {
         title: "Settings",
+        saveChanges: "Save Changes",
+        saving: "Saving...",
         language: {
             title: "Language",
             description: "Choose the display language for the application."
@@ -95,8 +97,6 @@ export default {
             description: "Your Gemini API key is stored securely in your browser's local storage and is never sent anywhere else.",
             yourKey: "Your Gemini API Key",
             placeholder: "Enter your API key here",
-            saveButton: "Save Key",
-            saved: "Saved!",
             getLink: "Get your Gemini API Key"
         }
     },

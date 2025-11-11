@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "Tableau de bord IA des sentiments clients",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "Paramètres",
+        saveChanges: "Enregistrer les modifications",
+        saving: "Enregistrement...",
         language: {
             title: "Langue",
             description: "Choisissez la langue d'affichage de l'application."
@@ -94,8 +97,6 @@ export default {
             description: "Votre clé API Gemini est stockée en toute sécurité dans le stockage local de votre navigateur et n'est jamais envoyée ailleurs.",
             yourKey: "Votre clé API Gemini",
             placeholder: "Entrez votre clé API ici",
-            saveButton: "Enregistrer la clé",
-            saved: "Enregistré !",
             getLink: "Obtenez votre clé API Gemini"
         }
     },

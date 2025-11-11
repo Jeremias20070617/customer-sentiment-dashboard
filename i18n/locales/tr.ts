@@ -76,6 +76,8 @@ export default {
     },
     settings: {
         title: "Ayarlar",
+        saveChanges: "Değişiklikleri Kaydet",
+        saving: "Kaydediliyor...",
         language: {
             title: "Dil",
             description: "Uygulama için görüntüleme dilini seçin."
@@ -95,8 +97,6 @@ export default {
             description: "Gemini API anahtarınız tarayıcınızın yerel depolama alanında güvenli bir şekilde saklanır ve başka hiçbir yere gönderilmez.",
             yourKey: "Gemini API Anahtarınız",
             placeholder: "API anahtarınızı buraya girin",
-            saveButton: "Anahtarı Kaydet",
-            saved: "Kaydedildi!",
             getLink: "Gemini API Anahtarınızı Alın"
         }
     },

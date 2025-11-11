@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "KI-Kundenstimmungs-Dashboard",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "Einstellungen",
+        saveChanges: "Änderungen speichern",
+        saving: "Speichern...",
         language: {
             title: "Sprache",
             description: "Wählen Sie die Anzeigesprache für die Anwendung."
@@ -94,8 +97,6 @@ export default {
             description: "Ihr Gemini API-Schlüssel wird sicher im lokalen Speicher Ihres Browsers gespeichert und nirgendwo anders hingeschickt.",
             yourKey: "Ihr Gemini API-Schlüssel",
             placeholder: "Geben Sie hier Ihren API-Schlüssel ein",
-            saveButton: "Schlüssel speichern",
-            saved: "Gespeichert!",
             getLink: "Holen Sie sich Ihren Gemini API-Schlüssel"
         }
     },

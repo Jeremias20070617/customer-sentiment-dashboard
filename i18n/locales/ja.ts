@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "AI顧客感情分析ダッシュボード",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "設定",
+        saveChanges: "変更を保存",
+        saving: "保存中...",
         language: {
             title: "言語",
             description: "アプリケーションの表示言語を選択してください。"
@@ -94,8 +97,6 @@ export default {
             description: "お使いのGemini APIキーは、ブラウザのローカルストレージに安全に保存され、他の場所に送信されることはありません。",
             yourKey: "あなたのGemini APIキー",
             placeholder: "ここにAPIキーを入力してください",
-            saveButton: "キーを保存",
-            saved: "保存しました！",
             getLink: "Gemini APIキーを取得"
         }
     },

@@ -21,10 +21,19 @@ This application allows users to paste or upload raw customer reviews and receiv
 
 ### 🚀 Getting Started
 
-1.  **Get a Gemini API Key:** You need a Google Gemini API key to use the analysis features. You can get one for free from [Google AI Studio](https://aistudio.google.com/api-keys).
-2.  **Add Your API Key:** Go to `Settings` > `API Key Management` in the app, paste your key, and click "Save". The key is stored securely in your browser's local storage.
-3.  **Create a Project:** Go to `My Projects` and click "Create New Analysis".
-4.  **Analyze:** Paste your customer reviews and click the "Analyze Sentiment" button to get your report.
+This is a standalone web application. You don't need a server or build tools to run it.
+
+1.  **Download the Project Files:**
+    Make sure you have all the project files (`index.html`, `index.tsx`, etc.) in the same folder on your computer.
+
+2.  **Open in Browser:**
+    Simply open the `index.html` file in a modern web browser like Chrome, Firefox, or Edge.
+
+3.  **Get a Gemini API Key:**
+    You need a Google Gemini API key to use the analysis features. You can get one for free from [Google AI Studio](https://aistudio.google.com/api-keys).
+
+4.  **Add Your API Key:**
+    Once the app is open in your browser, go to `Settings` > `API Key Management`, paste your key, and click "Save". The key is stored securely in your browser's local storage.
 
 ---
 
@@ -32,7 +41,7 @@ This application allows users to paste or upload raw customer reviews and receiv
 
 ### 🎯 Amaç
 
-Bu uygulama, kullanıcıların ham müşteri yorumlarını yapıştırmasına veya yüklemesine olanak tanır ve kapsamlı bir duygu analizi raporu sunar. Ürün yöneticileri, pazarlamacılar ve müşteri destek ekiplerinin müşteri geri bildirimlerini hızla anlaması, temel sorunları belirlemesi ve iyileştirme alanlarını keşfetmesi için tasarlanmıştır.
+Bu uygulama, kullanıcıların ham müşteri yorumlarını yapıştırmasına olanak tanır ve kapsamlı bir duygu analizi raporu sunar. Ürün yöneticileri, pazarlamacılar ve müşteri destek ekiplerinin müşteri geri bildirimlerini hızla anlaması, temel sorunları belirlemesi ve iyileştirme alanlarını keşfetmesi için tasarlanmıştır.
 
 ### ✨ Temel Özellikler
 
@@ -45,10 +54,19 @@ Bu uygulama, kullanıcıların ham müşteri yorumlarını yapıştırmasına ve
 
 ### 🚀 Başlarken
 
-1.  **Gemini API Anahtarı Alın:** Analiz özelliklerini kullanmak için bir Google Gemini API anahtarına ihtiyacınız var. [Google AI Studio](https://aistudio.google.com/api-keys) adresinden ücretsiz olarak alabilirsiniz.
-2.  **API Anahtarınızı Ekleyin:** Uygulamada `Ayarlar` > `API Anahtarı Yönetimi`'ne gidin, anahtarınızı yapıştırın ve "Kaydet"e tıklayın. Anahtar, tarayıcınızın yerel depolama alanında güvenli bir şekilde saklanır.
-3.  **Proje Oluşturun:** `Projelerim`'e gidin ve "Yeni Analiz Oluştur"a tıklayın.
-4.  **Analiz Edin:** Müşteri yorumlarınızı yapıştırın ve raporunuzu almak için "Duyguları Analiz Et" düğmesine tıklayın.
+Bu, bağımsız bir web uygulamasıdır. Çalıştırmak için bir sunucuya veya derleme araçlarına ihtiyacınız yoktur.
+
+1.  **Proje Dosyalarını İndirin:**
+    Tüm proje dosyalarının (`index.html`, `index.tsx`, vb.) bilgisayarınızda aynı klasörde olduğundan emin olun.
+
+2.  **Tarayıcıda Açın:**
+    `index.html` dosyasını Chrome, Firefox veya Edge gibi modern bir web tarayıcısında açmanız yeterlidir.
+
+3.  **Gemini API Anahtarı Alın:**
+    Analiz özelliklerini kullanmak için bir Google Gemini API anahtarına ihtiyacınız var. [Google AI Studio](https://aistudio.google.com/api-keys) adresinden ücretsiz olarak alabilirsiniz.
+
+4.  **API Anahtarınızı Ekleyin:**
+    Uygulama tarayıcınızda açıldıktan sonra, `Ayarlar` > `API Anahtarı Yönetimi`'ne gidin, anahtarınızı yapıştırın ve "Kaydet"e tıklayın. Anahtar, tarayıcınızın yerel depolama alanında güvenli bir şekilde saklanır.
 
 ---
 
@@ -56,7 +74,7 @@ Bu uygulama, kullanıcıların ham müşteri yorumlarını yapıştırmasına ve
 
 ### 🎯 Цель
 
-Это приложение позволяет пользователям вставлять или загружать необработанные отзывы клиентов и получать всесторонний отчет по анализу настроений. Оно разработано для менеджеров по продуктам, маркетологов и команд поддержки, чтобы быстро понимать обратную связь от клиентов, выявлять ключевые проблемы и находить области для улучшения.
+Это приложение позволяет пользователям вставлять необработанные отзывы клиентов и получать всесторонний отчет по анализу настроений. Оно разработано для менеджеров по продуктам, маркетологов и команд поддержки, чтобы быстро понимать обратную связь от клиентов, выявлять ключевые проблемы и находить области для улучшения.
 
 ### ✨ Ключевые особенности
 
@@ -69,10 +87,19 @@ Bu uygulama, kullanıcıların ham müşteri yorumlarını yapıştırmasına ve
 
 ### 🚀 Начало работы
 
-1.  **Получите API-ключ Gemini:** Вам понадобится API-ключ Google Gemini для использования функций анализа. Вы можете получить его бесплатно в [Google AI Studio](https://aistudio.google.com/api-keys).
-2.  **Добавьте ваш API-ключ:** В приложении перейдите в `Настройки` > `Управление API-ключом`, вставьте свой ключ и нажмите "Сохранить". Ключ надежно хранится в локальном хранилище вашего браузера.
-3.  **Создайте проект:** Перейдите в `Мои проекты` и нажмите "Создать новый анализ".
-4.  **Анализируйте:** Вставьте отзывы ваших клиентов и нажмите кнопку "Анализировать настроения", чтобы получить ваш отчет.
+Это автономное веб-приложение. Вам не нужен сервер или инструменты сборки для его запуска.
+
+1.  **Скачайте файлы проекта:**
+    Убедитесь, что все файлы проекта (`index.html`, `index.tsx` и т. д.) находятся в одной папке на вашем компьютере.
+
+2.  **Откройте в браузере:**
+    Просто откройте файл `index.html` в современном веб-браузере, таком как Chrome, Firefox или Edge.
+
+3.  **Получите API-ключ Gemini:**
+    Вам понадобится API-ключ Google Gemini для использования функций анализа. Вы можете получить его бесплатно в [Google AI Studio](https://aistudio.google.com/api-keys).
+
+4.  **Добавьте ваш API-ключ:**
+    Когда приложение откроется в вашем браузере, перейдите в `Настройки` > `Управление API-ключом`, вставьте свой ключ и нажмите "Сохранить". Ключ надежно хранится в локальном хранилище вашего браузера.
 
 ---
 

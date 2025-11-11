@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "人工智能客户情绪分析仪表板",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "设置",
+        saveChanges: "保存更改",
+        saving: "保存中...",
         language: {
             title: "语言",
             description: "选择应用程序的显示语言。"
@@ -94,8 +97,6 @@ export default {
             description: "您的Gemini API密钥安全地存储在您浏览器的本地存储中，绝不会发送到其他任何地方。",
             yourKey: "您的Gemini API密钥",
             placeholder: "在此处输入您的API密钥",
-            saveButton: "保存密钥",
-            saved: "已保存！",
             getLink: "获取您的Gemini API密钥"
         }
     },

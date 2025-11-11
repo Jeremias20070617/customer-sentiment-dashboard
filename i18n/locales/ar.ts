@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "لوحة قيادة مشاعر العملاء بالذكاء الاصطناعي",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "الإعدادات",
+        saveChanges: "حفظ التغييرات",
+        saving: "جارٍ الحفظ...",
         language: {
             title: "اللغة",
             description: "اختر لغة عرض التطبيق."
@@ -94,8 +97,6 @@ export default {
             description: "يتم تخزين مفتاح Gemini API الخاص بك بشكل آمن في التخزين المحلي للمتصفح ولا يتم إرساله إلى أي مكان آخر.",
             yourKey: "مفتاح Gemini API الخاص بك",
             placeholder: "أدخل مفتاح API الخاص بك هنا",
-            saveButton: "حفظ المفتاح",
-            saved: "تم الحفظ!",
             getLink: "احصل على مفتاح Gemini API الخاص بك"
         }
     },

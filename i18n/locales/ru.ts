@@ -76,6 +76,8 @@ export default {
     },
     settings: {
         title: "Настройки",
+        saveChanges: "Сохранить изменения",
+        saving: "Сохранение...",
         language: {
             title: "Язык",
             description: "Выберите язык отображения для приложения."
@@ -95,8 +97,6 @@ export default {
             description: "Ваш ключ API Gemini надежно хранится в локальном хранилище вашего браузера и никогда не отправляется куда-либо еще.",
             yourKey: "Ваш API-ключ Gemini",
             placeholder: "Введите ваш API-ключ здесь",
-            saveButton: "Сохранить ключ",
-            saved: "Сохранено!",
             getLink: "Получите ваш API-ключ Gemini"
         }
     },

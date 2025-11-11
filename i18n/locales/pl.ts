@@ -1,4 +1,5 @@
 
+
 export default {
     app: {
         title: "Panel analizy sentymentu klientów AI",
@@ -75,6 +76,8 @@ export default {
     },
     settings: {
         title: "Ustawienia",
+        saveChanges: "Zapisz zmiany",
+        saving: "Zapisywanie...",
         language: {
             title: "Język",
             description: "Wybierz język wyświetlania aplikacji."
@@ -94,8 +97,6 @@ export default {
             description: "Twój klucz API Gemini jest bezpiecznie przechowywany w lokalnej pamięci przeglądarki i nigdy nie jest wysyłany gdzie indziej.",
             yourKey: "Twój klucz API Gemini",
             placeholder: "Wprowadź tutaj swój klucz API",
-            saveButton: "Zapisz klucz",
-            saved: "Zapisano!",
             getLink: "Zdobądź swój klucz API Gemini"
         }
     },

